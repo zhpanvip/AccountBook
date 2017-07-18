@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey_33"
+            android:text="头像"/>
+
+        <ImageView
+            android:id="@+id/iv_head_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/as_icon_arrow_blue_right_p"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/iv_head_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="155****9670"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/grey_33"
+            android:src="@drawable/ic_touxiang"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_head_right"/>
+    </RelativeLayout>
+    <include layout="@layout/base_line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey_33"
+            android:text="账号"/>
+
+        <ImageView
+            android:id="@+id/iv_account_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/as_icon_arrow_blue_right_p"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="155****9670"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/grey_33"
+            android:layout_toLeftOf="@id/iv_account_right"/>
+
+
+    </RelativeLayout>
+    <include layout="@layout/base_line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey_33"
+            android:text="邮箱"/>
+
+        <ImageView
+            android:id="@+id/iv_email_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/as_icon_arrow_blue_right_p"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="lunlele@outlook.com"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="@color/grey_33"
+            android:layout_toLeftOf="@id/iv_email_right"/>
+
+
+    </RelativeLayout>
+    <include layout="@layout/base_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey_33"
+            android:text="修改密码"/>
+
+        <ImageView
+            android:id="@+id/iv_psw_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/as_icon_arrow_blue_right_p"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:text="退出登陆"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>

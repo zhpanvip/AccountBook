@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fr_record"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/activity_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/rl_class"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#F26D49"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/x2" />
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_class"
+                    android:gravity="center_vertical"
+                    android:text="餐饮"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/tv_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical|right"
+                    android:hint="￥0.00"
+                    android:inputType="numberDecimal"
+                    android:background="@null"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <include layout="@layout/base_line"/>
+
+            <project.graduate.lele.accountbook.view.GridViewForScrollView
+                android:id="@+id/gd_class"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:numColumns="5"/>
+            <include layout="@layout/base_line"/>
+            <RelativeLayout
+                android:id="@+id/rl_date"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ico_main_calendar" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_date"
+                    android:gravity="center_vertical"
+                    android:text="2017-01-30"
+                    android:textColor="@color/grey_33"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <include layout="@layout/base_line"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/localtion" />
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_address"
+                    android:gravity="center_vertical"
+                    android:text="河南大学金明校区"
+                    android:textColor="@color/grey_33"
+                    android:textSize="16sp" />
+                <!--<ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/delete" />-->
+
+            </RelativeLayout>
+            <include layout="@layout/base_line"/>
+            <RelativeLayout
+                android:id="@+id/rl_members"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_members"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/members" />
+
+                <TextView
+                    android:id="@+id/tv_members"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_members"
+                    android:gravity="center_vertical"
+                    android:text="请选择成员"
+                    android:textColor="@color/grey_99"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <include layout="@layout/base_line"/>
+            <RelativeLayout
+                android:id="@+id/rl_pay_way"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_pay_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ico_main_out" />
+
+                <TextView
+                    android:id="@+id/tv_pay_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_pay_way"
+                    android:gravity="center_vertical"
+                    android:text="请选择支付方式"
+                    android:textColor="@color/grey_99"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <include layout="@layout/base_line"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/iv_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/note" />
+
+                <EditText
+                    android:id="@+id/tv_note"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/iv_note"
+                    android:gravity="center_vertical"
+                    android:maxLength="50"
+                    android:hint="备注"
+                    android:background="@null"
+                    android:textColor="@color/grey_99"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            <include layout="@layout/base_line"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg_save"
+        android:textColor="@color/white"
+        android:text="保存"/>
+</FrameLayout>

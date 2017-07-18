@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.lantouzi.wheelview.WheelView
+        android:id="@+id/wheel_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F6F6F6" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <project.graduate.lele.accountbook.view.PieChartView
+                    android:id="@+id/pie_chart_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp" />
+
+                <include layout="@layout/base_line" />
+
+
+                <project.graduate.lele.accountbook.view.ListViewForScrollView
+                    android:id="@+id/lv_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <include layout="@layout/no_data" />
+        </FrameLayout>
+    </ScrollView>
+
+
+</LinearLayout>

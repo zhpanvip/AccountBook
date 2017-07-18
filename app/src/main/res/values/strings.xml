@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">天天记账</string>
+    <string name="tab1">记账</string>
+    <string name="tab2">报表</string>
+    <string name="tab3">资金</string>
+    <string name="tab4">更多</string>
+    <string name="title_activity_base">BaseActivity</string>
+</resources>

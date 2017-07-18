@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="天天记账"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@color/grey_33"
+        android:gravity="center_horizontal"/>
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="AccountBook通过一系列简单和多样化的服务，让您对自己或您的小家资产和消费都能知根知底，财富规划更完善，实现家庭财务的最优管理"
+        android:textColor="@color/grey_33"
+        android:textSize="16sp" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="河南大学2017届毕业论文 \n ©版权所有伦乐乐"
+        android:textColor="@color/grey_33"
+        android:textSize="14sp"
+        android:gravity="bottom|center_horizontal"
+        android:layout_marginBottom="30dp"/>
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/grey_33"/>
+
+
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ll_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_pay"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="支出"
+                android:gravity="center"
+                android:textSize="18sp"
+
+                android:textColor="@color/background_red"/>
+            <View
+                android:id="@+id/view_pay"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/background_red"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gain"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_gain"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="收入"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/grey_66"/>
+            <View
+                android:id="@+id/view_gain"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/ll_overplus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_overplus"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="结余"
+                android:gravity="center"
+                android:textSize="18sp"
+
+                android:textColor="@color/grey_66"/>
+            <View
+                android:id="@+id/view_overplus"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/white"/>
+
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+    <include layout="@layout/base_line"/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_my_count"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
